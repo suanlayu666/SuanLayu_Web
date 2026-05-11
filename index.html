@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 嵌入式 & AI 开发</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ====== Navigation ====== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">酸辣鱼</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== Hero Section ====== -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">你好，我是</p>
+            <h1 class="hero-name">酸辣鱼</h1>
+            <p class="hero-subtitle">
+                <span id="typing-text"></span><span class="cursor">|</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">查看我的项目</a>
+                <a href="#" class="btn btn-outline">下载简历</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- ====== About Section ====== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-grid">
+                <div class="about-avatar">
+                    <img src="images/xiong.jpg" alt="酸辣鱼的头像" class="avatar-img">
+                </div>
+                <div class="about-info">
+                    <h3>中南民族大学 · 电子信息工程</h3>
+                    <p class="about-bio">
+                        我是一名电子信息工程专业的学生，对嵌入式系统和人工智能开发充满热情。
+                        从底层硬件到上层算法，我享受技术栈全链路的探索过程。
+                        目前专注于 MCU 嵌入式开发与边缘 AI 推理的结合应用。
+                    </p>
+                    <ul class="about-details">
+                        <li><span class="label">学校</span>中南民族大学</li>
+                        <li><span class="label">专业</span>电子信息工程</li>
+                        <li><span class="label">方向</span>嵌入式开发 / AI 开发</li>
+                        <li><span class="label">邮箱</span>2742263464@qq.com</li>
+                        <li><span class="label">GitHub</span>github.com/suanlayu666</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Skills Section ====== -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">技能树</h2>
+            <div class="skills-grid">
+                <!-- 嵌入式开发 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="12" rx="2"/>
+                            <path d="M6 20h12M12 16v4"/>
+                        </svg>
+                    </div>
+                    <h3>嵌入式开发</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">MCU/ARM 开发 (STM32)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">C/C++ 嵌入式编程</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">RTOS (FreeRTOS)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">电路设计与 PCB</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">通信协议 (I2C/SPI/UART/CAN)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- AI 开发 -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>AI 开发</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Python / 机器学习</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">深度学习 (PyTorch / TensorFlow)</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">计算机视觉 / NLP</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">模型部署（边缘端推理）</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+                        </li>
+                        <li>
+                            <span class="skill-name">数据预处理与分析</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Projects Section ====== -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">项目经历</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>项目名称 1</h3>
+                        <div class="project-tags">
+                            <span class="tag">STM32</span>
+                            <span class="tag">C</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">项目简介：简要描述项目的功能、亮点和你在项目中承担的角色。</p>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>项目名称 2</h3>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">项目简介：简要描述项目的功能、亮点和你在项目中承担的角色。</p>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>项目名称 3</h3>
+                        <div class="project-tags">
+                            <span class="tag">FreeRTOS</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">项目简介：简要描述项目的功能、亮点和你在项目中承担的角色。</p>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>项目名称 4</h3>
+                        <div class="project-tags">
+                            <span class="tag">EdgeAI</span>
+                            <span class="tag">TinyML</span>
+                        </div>
+                    </div>
+                    <p class="project-desc">项目简介：简要描述项目的功能、亮点和你在项目中承担的角色。</p>
+                    <a href="#" class="project-link">查看详情 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Contact / Footer ====== -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="social-links">
+                <a href="mailto:2742263464@qq.com" class="social-icon" aria-label="邮箱">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M2 7l10 7 10-7"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/suanlayu666" target="_blank" class="social-icon" aria-label="GitHub">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="微信">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm3.95 2.006c-3.486 0-6.318 2.65-6.318 5.912 0 3.263 2.832 5.913 6.318 5.913.465 0 .93-.045 1.382-.135a.658.658 0 01.548.074l1.454.852a.25.25 0 00.128.041.225.225 0 00.221-.225c0-.056-.022-.11-.037-.163l-.298-1.132a.452.452 0 01.163-.508c1.398-1.03 2.224-2.56 2.224-4.257 0-3.262-2.832-5.912-6.318-5.912h-.022a8.196 8.196 0 00-.545 0zm-2.413 3.309a.89.89 0 01.888.9.888.888 0 01-.888.9.888.888 0 01-.888-.9.89.89 0 01.888-.9zm4.36 0a.89.89 0 01.888.9.888.888 0 01-.888.9.888.888 0 01-.888-.9.89.89 0 01.888-.9z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 酸辣鱼. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="回到顶部">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
